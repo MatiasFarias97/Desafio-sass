@@ -1,0 +1,82 @@
+/*Empieza aside + ofertas + recomendados */
+.aside__style {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2%;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    p{
+        background-color: $aside__color;
+        padding: 2%;
+    }
+
+}
+
+.aside__img {
+    width: 75%;
+}
+
+h2,
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+    background-color: $h2-h3__bgcolor;
+}
+
+.section__ofertas {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.ofertas__card--size {
+    width: 40%;
+    margin: 5px;
+}
+
+.text__bold {
+    font-weight: $text__bold;
+}
+
+.text__secondary {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.ofertas__card--contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 2px;
+}
+
+.ofertas__card--bg {
+    background: $card__ofertas--color;
+}
+
+.reco__h5 {
+    background-color: $productos__color;
+    font-size: 1.3rem;
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: $text__bold;
+}
+
+.reco__contenedor {
+    width: 70%;
+    margin: auto;
+}
+
+/*Termina index*/
+
+
+
+

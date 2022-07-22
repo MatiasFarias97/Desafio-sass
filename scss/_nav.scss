@@ -1,0 +1,64 @@
+#html {
+   background-color: $body__color; 
+   font-size: $general__size--font;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Oswald', sans-serif;
+
+}
+.text__white {
+    color: $text__white;
+}
+.logo__style {
+    width: 100%;
+}
+.nav__bgcolor{
+    background-color: $nav__bgcolor;
+    width: 100%;
+}
+.nav__style{
+    height: 20%;
+    a{ font-size: 1.5rem;
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+        list-style: none;
+    }
+    button{ font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        transition: 0.5s;
+        cursor: pointer;
+        color: white;
+        border: none;
+
+    }
+
+}
+.boton__hamburguesa{
+    background-image: url(../imagenes/boton_hamburguesa.svg);
+    width: 1.5em;
+    height: 1.5em;
+}
+.nav__ul--style{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    width: 85%;
+    transition: 300ms;
+}
+.nav__buscador {
+    font-weight: 300;
+    border-radius: 2px;
+}
+/* Termina nav*/
+
+
+
+
