@@ -3,22 +3,12 @@
 //vars font
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto+Condensed&display=swap');
 $text__bold:bold;
-
-
-
 $general__size--font: font-size 62.5%;
 
 //vars color
-$body__color: #e1e1e0;
-$nav__bgcolor: #2120208d;
-$aside__color:#bfbd49a9;
-$productos__color: #e5e1e1de;
-$card__ofertas--color:linear-gradient(#0000005c, #ffffffe0);
-$footer__color: #212020bd;
-$titulos__color:#2c7877ed;
+$card__ofertas--color:linear-gradient(#0000005c, #ffffffe0);;
 $text__white: #f7f3f3;
 $text__reco--carrusel:#e5e1e1de;
-$filtros__color:#79aeae52;
 $filtros__color--label: #21212117;
 $filtros__boton:#ebe9e9e1;
 $filtros__boton--hover: linear-gradient( 180deg,#0000005c, #ffffffe0);
@@ -26,3 +16,42 @@ $card__productos--color:#fffefeb3;
 $h2-h3__bgcolor:#2c7877ed;
     
 
+//map
+$paleta:(
+    "bg_body": #1f1e1ec1,
+    "bg_nav_footer": #000000bd,
+    "color_titulos": #2c7877ed,
+    "bg_filtros": #79aeae52,
+    "bg_aside": #bfbd49a9,
+    "bg_productos": #e5e1e1de,
+    
+);
+
+//mixin
+@mixin medias($breakpoint){
+    @if $breakpoint == 768px {
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+    @if $breakpoint == 992px{
+        @media (min-width: 992px){
+            @content;
+        }
+    }
+    @if $breakpoint == 1100px{
+        @media (min-width: 1100px){
+            @content;
+        }
+    }
+    @if $breakpoint == 1300px{
+        @media (min-width: 1300px){
+            @content;
+        }
+    }
+    @if $breakpoint == 1400px{
+        @media (min-width: 1400px){
+            @content;
+        }
+    }
+}

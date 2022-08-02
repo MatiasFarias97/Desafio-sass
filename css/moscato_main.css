@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto+Condensed&display=swap");
 #html {
-  background-color: #e1e1e0;
+  background-color: rgba(31, 30, 30, 0.7568627451);
   font-size: font-size 62.5%;
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +17,7 @@
 }
 
 .nav__bgcolor {
-  background-color: rgba(33, 32, 32, 0.5529411765);
+  background-color: rgba(0, 0, 0, 0.7411764706);
   width: 100%;
 }
 
@@ -66,6 +66,32 @@
 }
 
 /* Termina nav*/
+/* breakpoint*/
+@media (min-width: 768px) {
+  .logo__style {
+    width: 100%;
+  }
+  .nav__ul--style {
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .logo__style {
+    width: 97%;
+  }
+  .nav__style {
+    height: 20%;
+  }
+  .nav__style a {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+@media (min-width: 1400px) {
+  .logo__style {
+    width: 75%;
+  }
+}
 /*Empieza aside + ofertas + recomendados */
 .aside__style {
   width: 100%;
@@ -75,7 +101,7 @@
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
-  margin-top: 2%;
+  margin: 10px;
   font-size: 1.2rem;
   padding-right: 20px;
 }
@@ -125,8 +151,14 @@ h3 {
   margin: 10px 2px;
 }
 
-.ofertas__card--bg {
+.ofertas__card--bg, .super__oferta {
   background: linear-gradient(rgba(0, 0, 0, 0.3607843137), rgba(255, 255, 255, 0.8784313725));
+}
+
+.super__oferta {
+  box-shadow: 1px 1px 18px 12px rgb(255, 0, 0);
+  -webkit-box-shadow: 1px 1px 18px 12px rgb(255, 0, 0);
+  -moz-box-shadow: 1px 1px 18px 12px rgb(255, 0, 0);
 }
 
 .reco__h5 {
@@ -143,10 +175,35 @@ h3 {
 }
 
 /*Termina index*/
+/* Breakpoint */
+@media (min-width: 768px) {
+  .aside__style p {
+    font-size: 1.5rem;
+  }
+  .aside__img {
+    width: 65%;
+  }
+  h2, h3 {
+    font-size: 2.3rem;
+    padding-bottom: 10px;
+  }
+  .ofertas__card--size {
+    width: 30%;
+  }
+  .text__bold {
+    font-size: 1.4rem;
+  }
+  .text__secondary {
+    font-size: 1.2rem;
+  }
+  .reco__contenedor {
+    width: 60%;
+  }
+}
 /* Empieza footer*/
 .footer__style {
   margin-top: 10px;
-  background-color: rgba(33, 32, 32, 0.7411764706);
+  background-color: rgba(0, 0, 0, 0.7411764706);
   font-size: 1rem;
   height: auto;
   width: 100%;

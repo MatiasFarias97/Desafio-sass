@@ -1,5 +1,5 @@
 #html {
-   background-color: $body__color; 
+   background-color: map-get($map:$paleta,$key: "bg_body"); 
    font-size: $general__size--font;
    box-sizing: border-box;
    margin: 0;
@@ -12,9 +12,10 @@
 }
 .logo__style {
     width: 100%;
+    
 }
 .nav__bgcolor{
-    background-color: $nav__bgcolor;
+    background-color: map-get($map:$paleta,$key:"bg_nav_footer");
     width: 100%;
 }
 .nav__style{
@@ -39,6 +40,7 @@
     background-image: url(../imagenes/boton_hamburguesa.svg);
     width: 1.5em;
     height: 1.5em;
+
 }
 .nav__ul--style{
     display: flex;
@@ -57,8 +59,40 @@
     font-weight: 300;
     border-radius: 2px;
 }
+
 /* Termina nav*/
 
+/* breakpoint*/
 
+@include medias (768px){
+    .logo__style{
+        width: 100%;
+    }
 
+    .nav__ul--style {
+        padding-left: 15px;
+    }
+
+}
+
+@include medias (992px){
+    .logo__style {
+        width: 97%;
+    }
+
+    .nav__style{
+        height: 20%;
+        a{ 
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+    }
+
+}
+
+@include medias(1400px){
+    .logo__style {
+        width: 75%;
+    }
+}
 
